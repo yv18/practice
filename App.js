@@ -27,3 +27,17 @@ function genrateOTP(number) {
 
 console.log(genrateOTP(6));
 
+
+// Array Method
+const array = ["Virat Kohli", "Anushka kohli", "Vamika Kohli", "Akaay Kohli"];
+console.table(array);
+
+const sort =  array.sort();
+console.table(sort);
+
+const NumberArray = [10,9,8,7,6,5,4,3,2,1];
+console.log(NumberArray);
+
+const sortNumber = NumberArray.sort((a,b)=> a-b);
+console.log(sortNumber);
+
