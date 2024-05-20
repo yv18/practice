@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+const express = require("express");
+const app = express()
+
 //swap the number
 let a = 10;
 let b = 20;
@@ -61,3 +66,21 @@ const people = [
   const isAdult = (person) => person.age >= 18;
   const adults = people.filter(isAdult);
   console.log(adults);
+
+
+
+  const arr = [1,2,3,8,9,10];
+  const multipliedArr = arr.map(element => element * 2);
+  console.log(multipliedArr); 
+
+
+  const port = process.env.PORT || 3000;
+
+  app.get("/", function(req, res) {
+    res.send("Hello World");
+});
+
+
+app.listen(port, function() {
+    console.log("Server is running on port", port);
+});
